@@ -79,4 +79,5 @@ static void echo_task(void *arg)
 void app_main(void)
 {
     xTaskCreate(echo_task, "uart_echo_task", ECHO_TASK_STACK_SIZE, NULL, 10, NULL);
+    ESP_LOGI(TAG, "AFTER TASK!");
 }
